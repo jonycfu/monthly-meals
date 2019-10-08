@@ -3,12 +3,6 @@
     <li v-for="(val,idx) in linkList" v-bind:key="idx">
       <router-link :to="val">{{val}}</router-link>
     </li>
-    <!-- <li>
-      <router-link to="/analyze">Analysis</router-link>
-    </li>
-    <li>
-      <router-link to="/settings">Settings</router-link>
-    </li>-->
   </ul>
 </template>
 

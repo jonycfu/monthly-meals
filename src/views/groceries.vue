@@ -19,11 +19,25 @@
 
 <script lang="ts">
   import { IfoodSKU } from "@/types/food"
-  import { Component, Prop, Vue } from "vue-property-decorator";
+  import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 
+  @Component({
+    beforeRouteEnter (to, from, next) {
+      // if(to.params.search) {
+      // }
+      console.log('yo');
+      
+      next(vm => console.log(to.params.search))
+    }
+  })
   export default class Groceries extends Vue {
-    @Prop() groceriesList:Array<IfoodSKU> = []
-    @Prop() loading: boolean = false
-    @Prop() private errorMessage: string = ''
+    @Prop({ default(){ return [] } })
+      groceriesList!:Array<IfoodSKU>
+    @Prop({ default: false }) 
+      loading!: boolean
+    @Prop({ default: '' }) 
+      errorMessage!: string | undefined
+    
+
   }
 </script>

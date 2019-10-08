@@ -9,9 +9,9 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/groceries",
+      path: "/groceries/:search?",
       name: "groceries",
-      component: Groceries
+      component: () => import("./views/groceries.vue")
     },
     {
       path: "/analysis",

@@ -5,10 +5,15 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
   position: relative;
+}
+ul {
+  & > li {
+    list-style: none;
+  }
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
