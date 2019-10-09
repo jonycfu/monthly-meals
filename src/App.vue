@@ -37,7 +37,7 @@ import NavTab from "@/components/NavTab.vue";
 
 @Component({
   components: {
-    NavTab
+    NavTab,
   },
   data() {
     return { navList: ["groceries", "analysis", "settings"] };

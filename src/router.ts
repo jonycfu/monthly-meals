@@ -11,7 +11,7 @@ export default new Router({
     {
       path: "/groceries/:search?",
       name: "groceries",
-      component: () => import("./views/groceries.vue")
+      component: () => import("./views/groceries.vue"),
     },
     {
       path: "/analysis",
