@@ -1,7 +1,8 @@
+
 const NUTRITIONIX_ENDPOINT = "https://nutritionix-api.p.rapidapi.com/v1_1/search/"
 const NUTRITIONIX_HEADERS = { 
     "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
-    "x-rapidapi-key": "75457ae42cmshd8940b04f79b926p1149adjsn2192e730501c" 
+    "x-rapidapi-key": process.env.VUE_APP_NUTRITIONIX_API_KEY 
 }
 
 const NUTRITIONIX_SEARCH_FIELDS = [

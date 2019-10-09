@@ -16,7 +16,6 @@ export class foodQueryMixin extends Vue {
             fields: paramsList.join() 
         }
         this.$store.dispatch('toggleLoading', true);
-        console.log(this.$store.state.loading);
         
         try {
             const { data: { hits } } = await axios({
