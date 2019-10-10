@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Groceries from "./views/groceries.vue";
 
 Vue.use(Router);
 
@@ -8,15 +7,16 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
+    { path: "/", redirect: '/groceries' },
     {
       path: "/groceries/:search?",
       name: "groceries",
-      component: () => import("./views/groceries.vue"),
+      component: () => import("./views/Groceries.vue"),
     },
     {
       path: "/analysis",
       name: "analysis",
-      component: () => import("./views/analysis.vue")
+      component: () => import("./views/Analysis.vue")
     },
     {
       path: "/settings",
@@ -25,7 +25,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       /* webpackChunkName: "settings" */
-      component: () => import("./views/settings.vue")
+      component: () => import("./views/Settings.vue")
     }
   ]
 });

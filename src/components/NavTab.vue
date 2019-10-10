@@ -37,9 +37,10 @@ ul {
   justify-content: space-evenly;
 }
 li { 
-  padding: 2em;
+  padding: 1.2em;
   background: darkslateblue;
   color: whitesmoke;
+  font-size: 1.4rem;
   width: 100%;
   &:nth-child(2) {
     border-right: 0.5px solid indigo;

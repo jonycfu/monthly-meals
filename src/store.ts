@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import IfoodSKU from '@/types/food'
 
 Vue.use(Vuex)
 
@@ -16,6 +15,7 @@ export default new Vuex.Store({
     toggleLoading(state:any, data) {
       state.loading = data;
     }
+    //TODO: Use IndexDB for writing data
   },
   actions: { //can be async -- commit() here.
     addSearchResults({ commit }, hits) {

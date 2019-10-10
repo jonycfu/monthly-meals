@@ -32,6 +32,7 @@ input {
 #content-area {
   padding: 30px;
   flex: 1;
+  height: 70vh;
 }
 </style>
 
