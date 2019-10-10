@@ -17,22 +17,28 @@ export default class NavTab extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
+<style lang="scss" scoped>
 ul {
-  list-style-type: none;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background: darkslateblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+li { 
+  padding: 2em;
+
+  &:nth-child(2) {
+    border-right: 1px solid lightblue;
+    border-left: 1px solid lightblue;
+  }
 }
 a {
-  color: #42b983;
+  color: whitesmoke;
 }
 .router-link-active {
-  color: blueviolet;
+  color: lightblue;
 }
 </style>
