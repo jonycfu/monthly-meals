@@ -9,11 +9,15 @@
 body {
   margin: 0;
   position: relative;
+  background: lightsteelblue;
 }
 ul {
   & > li {
     list-style: none;
   }
+}
+input {
+  border-radius: 8px;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
